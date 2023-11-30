@@ -5,7 +5,7 @@ import java.util.Map;
 public class Main {
     public static void main(String[] args) {
         HashMap<String,Integer> mp = new HashMap<>(10);
-        String input = "To be or not to be";
+        String input = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situation";
 
         String[] words = input.split(" ");
 

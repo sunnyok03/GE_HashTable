@@ -65,6 +65,12 @@ public class HashMap<K,V> {
         return null; //not found
     }
 
+    public void removeKey(K key){
+        int idx = getIdx(key);
+        //iterate whole list at that index and if found that key, erase
+        list[idx].removeIf(node -> node.key.equals(key));
+    }
+
 
 
 }

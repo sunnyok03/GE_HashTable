@@ -18,11 +18,21 @@ public class Main {
             }
         }
 
-        // print the frequencies of each word
+        // print the frequencies of each word before removing
         System.out.println("Frequencies :");
         for(String word : words){
             System.out.println(word + " : " + mp.getValue(word));
         }
+
+        //remove the word "avoidable"
+        mp.removeKey("avoidable");
+
+        // print the frequencies of each word after removing
+        System.out.println("Frequencies :");
+        for(String word : words){
+            System.out.println(word + " : " + mp.getValue(word));
+        }
+
 
     }
 }
